@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetayActivity2">
+
+    <TextView
+        android:id="@+id/textViewEmailGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="24dp"
+        android:text="E-Posta"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2ParolaGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Parola"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmailGoster"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmailGoster" />
+
+    <TextView
+        android:id="@+id/textView3AdSoyadGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Ad Soyad"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2ParolaGoster"
+        app:layout_constraintTop_toBottomOf="@+id/textView2ParolaGoster" />
+
+    <TextView
+        android:id="@+id/textView4NumaraGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Numara"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3AdSoyadGoster"
+        app:layout_constraintTop_toBottomOf="@+id/textView3AdSoyadGoster" />
+
+    <EditText
+        android:id="@+id/editTextOgrenciNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="Öğrenci No Güncelle"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTamAd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTamAd" />
+
+    <EditText
+        android:id="@+id/editTextParola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Parola Güncelle"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4NumaraGoster" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="93dp"
+        android:onClick="onClickDeleteAccount"
+        android:text="Hesabı Sil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button4" />
+
+    <EditText
+        android:id="@+id/editTextTamAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Ad Soyad Güncelle"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextParola"
+        app:layout_constraintTop_toBottomOf="@+id/editTextParola" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:onClick="onClickSignOut"
+        android:text="Oturumu Kapat"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/buttonGuncelle" />
+
+    <Button
+        android:id="@+id/buttonGuncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="onClickUpdateAccount"
+        android:text="Bilgileri Güncelle"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/editTextOgrenciNo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

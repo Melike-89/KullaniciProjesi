@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "458346691349",
+    "project_id": "kullaniciprojesi-ccb2a",
+    "storage_bucket": "kullaniciprojesi-ccb2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458346691349:android:0784c92be656edeff4071c",
+        "android_client_info": {
+          "package_name": "tr.com.kullaniciprojesi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFy61hc439L4Mt3-45Fo3X8okxntPezDc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

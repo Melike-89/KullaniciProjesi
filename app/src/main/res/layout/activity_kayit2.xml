@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitActivity2">
+
+    <EditText
+        android:id="@+id/editKayitEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Email Adresiniz"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editKayitSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="Şifreniz"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/editKayitEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitEmail" />
+
+    <EditText
+        android:id="@+id/editOgrenciNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:hint="Numaranız"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editAdSoyad"
+        app:layout_constraintTop_toBottomOf="@+id/editAdSoyad" />
+
+    <EditText
+        android:id="@+id/editAdSoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Adınız Soyadınız"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editKayitSifre"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitSifre" />
+
+    <Button
+        android:id="@+id/btnKayitKaydetme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:onClick="onClickKaydet"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editOgrenciNo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
